@@ -9,7 +9,6 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -52,6 +51,17 @@
                     </select>
                     <textarea name="mensage" placeholder="OPICIONAL: DEIXE SUA MENSAGEM." cols="70" rows="10"
                         class="fordform mensage"></textarea>
+
+                    <span>Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A
+                        qualquer momento, será possível editar ou remover tais dados. 
+                        <a href=" https://www.ford.com.br/politica-de-privacidade/">Termos e Condições</a></span>
+                    <div class="checks">
+                        <input type="checkbox" id="consentimento" name="consentimento" value="aceito">
+                        <label for="consentimento">Sim. Li e concordo com os termos*.</label>
+                        <br>
+                        <input type="checkbox" id="aceite-promo" name="aceite-promo" value="aceito">
+                        <label for="aceite-promo">Sim. Também quero receber descontos e novidades.</label>
+                    </div>
                     <button type="submit" value="Submit">Enviar</button>
                 </form>
             </div>
@@ -70,7 +80,6 @@
             <img src="img/ford-96.png" width="70" />
         </div>
     </footer>
-    <script src="js/form.js"></script>
 </body>
-
+<script src="js/form.js"></script>
 </html>
