@@ -15,7 +15,7 @@ check.addEventListener("input", function(e){
 criaId();
 
 //class contato
-class contato {
+class Contato {
     constructor(nome, sobrenome, email, cpf, telefone, contato, mensage, consentimento, promos) {
         this._nome = nome;
         this._sobrenome = sobrenome;
@@ -34,7 +34,7 @@ class contato {
 }
 
 function Post(form) {
-    let data = new contato(form.elements.namedItem("nome").value,
+    let data = new Contato(form.elements.namedItem("nome").value,
         form.elements.namedItem("sobrenome").value,
         form.elements.namedItem("email").value,
         form.elements.namedItem("cpf").value,
@@ -46,15 +46,11 @@ function Post(form) {
     Enviar(data);
 }
 
-function Enviar(contact) { 
-    const contato =contact
+function Enviar(contato) {
     console.log(contato);
 
     var nome = document.getElementById("nomeid");
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + 'os seus dados foram encaminhados com sucesso');
-    }
-
+    if (nome.value != "") alert('Obrigado sr(a) ' + nome.value + 'os seus dados foram encaminhados com sucesso');
 }
 
 function criaId(){
